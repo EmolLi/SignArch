@@ -1,0 +1,32 @@
+Very well-researched and focused. The main area requiring attention was the final packaging of the concern view. The concerns/technical part is really solid.
+
+# FEEDBACK: CONTEXT
+
+[Full marks are for detailed, insightful, and polished context view and stakeholder descriptions that follow the best practices presented in the reference text and are generally helpful for a newcomer to understand the context of the system.]
+
++ Thanks for the intro in the README (watch for typos, though)
+- Language is a bit rough (e.g., "following is" -> "The following are", user's -> users')
++ Good focus on main features. You don't need to go on and on about what you leave out. Maybe one short mention, that's it.
+- I don't think the Context Model really shows how functionality and QAs get achieved. That would be more functional view (M2)
+= The Context model is ok, but minimal. The user is not shown interacting with the system. To be more useful as a self-contained artifact, edge annotations would have been useful.
++ Context model: the level of detail is just right, in terms of element granularity.
+? Dev tools. I understand about GitHub, but what's the role of Docker? I'm a bit curious here.
+= Black box: the idea here was to consider your target system as a black box, i.e., not go into the details of its internals.
++ Good insights for some of the relationship edges, e.g., regarding the distribution model via WebSockets.
++ Scenarios: A very useful extra.
+- Domain terminology could be explicit (expand acronyms, link to definitions, etc. e.g., NAT TURN, etc.)
+- The context view could be enriched with more details about the nature/characteristics of external interfaces.
++ Stakeholder list very insightful and generally well-done. I especially liked the split between lay and concerned users, as this distinction is likely to have software architectural implications.
+
+# FEEDBACK: CONCERNS
+
+[Full marks are for detailed, insightful, and polished descriptions of technical concerns, decisions, and principles, supported by concrete evidence collected from the system artifacts.]
+
++ Overall this part is very strong, easily meets expectations. Nicely follows the structure we worked with.
+- Please don't repeat the milestone instructions in your AD.
+- "netto" I don't mind a few German words here and there, but other readers might be confused by this.
++ Strategy: very solid and detailed. I hope you can fulfill it!
+? Concern measurability: how would we measure that?
++ Principle: one of the best examples I've seen
++ Decision: Also very good. I don't have anything major I can pick on, it's a very important and relevant decision and it's very well documented.
+

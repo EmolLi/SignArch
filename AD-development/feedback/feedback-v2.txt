@@ -1,0 +1,61 @@
+CLARITY: Was the architecture of the system clear? (Did you get enough context to understand the system and its environment? Did the abstraction make sense? Were the models and their description intuitive and useful? Etc.)
+
+GENERAL COMMENT: The overly narrative style harms clarity a bit. My suggestion would be to do one pass of serious tightening/cleanup before trying to address some of the other feedback.
+
+= You can tighten the scope of the view, and say very explicitly that the functional concern covered is the sending and receiving of messages (exclusively or not?)
+
+- Color is extraneous info. Figure could use a key and be more explicit about what a layer is, and the relation between layers (explained in the text, so not critical). But layer talks about components, and the style is mostly used for modules (static), so better be clear.
+
+- Component and module seem to be considered synonyms. Are they? This should be clear.
+
+- A layer is an interface?
+
+- Description of the layers mixes responsibilities and implementation details. A bit too general to be self-contained. Feels a bit like a tutorial on Android.
+
+- Maybe tease out some of the design decisions/arch principles (e.g., asynchronicity) better, for example by moving them up to separate sections. Overall information information is a bit too tangled.
+
+- Some of the elements and relations really needs the support of the main model to be understandable, yet this comes later.
+
+- PAC style hard to understand, goes to fast into details without explaining the standard responsibilities and constraints of the style at a conceptual level.
+
++ The first model is really good, I understood a lot of the architectural decisions from it rather than the text.
+
++ Aptly recognized a good opportunity to bring aspects from deployment viewpoint (Android Framework and WebRTC). This helped with their clarity of decisions and structures in Functional View much deeper.
+
+- [Rez] To show an SMS scenario, it would have been more appropriate to use sequence diagram.
+
+- [Rez] Despite mentioned in the description that, "[a]symmetric encryption, is to say key-pairs for establishing a session," the ER diagram is missing to connect the session and Asymmetric elements (or probably more appropriately session and Key elements).
+
+- Assumed Scenario refers to key exchange and session concepts not referred to in the rest of the view.
+
++ Second model, also clear and very high quality, but
+- I'm confused by the UI being in the System "layer"
+
+- I would have been curious about the handshake protocol. It seems relevant since you need to store the key somewhere and retrieve it.
+
+? Why is there a contribution statement?!
+
+- In the info view, I don't understand the data-flow diagram. Why is everything pointing to a message?
+
+SUBSTANCE: Was the information presented substantial? (Including precise, well-researched points, demonstrating creativity and reflection, as opposed to vague and/or obvious statements. Etc.).
+
++ Substantially researched.
+++ Includes traceability table with links
+
+- Would have been nice to have some more details on interfaces, e.g., how activities integrate with the rest of the system.
+
+QUALITY: Overall, were the views well-prepared and meeting high quality standards? (Good flow, effective visual support, a minimum of hesitation, repetition. Etc.)
+
+- Style is a bit more narrative than what is usual for ADs. You can remove the signposting. E.g., first paragraph of "Sending Message" is also the type of things I don't really expect in an AD. Overall, a way too wordy. Please remove all the waypointing text and try to reorganize the content to make the structure of the view more supportive of it. The AD has a "disorganized" feel. I would not be surprised if you could cut 50% of the text and still have the same value to stakeholders (if not more...)
+
++ Links are very useful and well-selected
+
+Evidence -> "s"
+
+- Broken link (in Assumed Scenario)
+
+- Don't refer to other milestones, this should be a self-contained AD (refer to other views, such as context view)
+
+- Is the text in italics a quote?
+
+In "Mapping on existing code artifacts", why not use a nice traceability table like in the functional view, instead of having these lists?

@@ -1,0 +1,15 @@
+FEEDBACK: What are the major aspects of the architectural description that can be improved?
+
++ Very good context, I like the requirements, context view. Maybe make the signal server more prominent?
++ I liked the positioning of the functional view.
+- Key management really interesting but more part of context, maybe include with identity business, which was a bit hard to understand, and more like a tutorial on crypto. Plus, assymetric and "a symetric" sound the same. A suggestion for M2/M3 would be to package some of that crucial domain knowledge in the context view, and refer to it when needed.
++ Really liked the overlay of state diagram and GUI screenshots
++ Good way to drill down using the same layers, but label the layers in the blow-up version.
+- Missing a bit of information about the streaming concern, if it's in scope.
++ Right on time;
+
+QUESTIONS:
+
+Q. How does streaming work? How is this represented in the functional overview?
+Q> Session keys, but the app is pgp, only because clear later.
+
